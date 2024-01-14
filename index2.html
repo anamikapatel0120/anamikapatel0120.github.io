@@ -22,7 +22,7 @@
     <span></span>
   </div>
 
-  <div class="container3">
+  <div method="post" class="container3">
     <div id="form-container">
       <div id="avatar-container">
         <img id="avatar-preview" src="#">
@@ -103,6 +103,7 @@
     </form>
 
   </div>
+  <div><h1>Your registration is successful.</h1></div>
 
   <script>
     function previewAvatar() {
@@ -142,6 +143,7 @@
         button1.addEventListener("click", () => {
           alert("Do you want to submit the form?");
           alert("Your registration is successful.")
+          window.scrollBy(0, window.innerHeight);
         })
       };
       clickBtn();
